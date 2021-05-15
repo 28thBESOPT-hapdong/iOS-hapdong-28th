@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1014C0264FB497004AC800 /* SecondPageTopScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1014BF264FB497004AC800 /* SecondPageTopScrollView.xib */; };
+		2B1014C3264FB68C004AC800 /* SecondPageTopScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1014C2264FB68C004AC800 /* SecondPageTopScrollView.swift */; };
 		2BD046ED264FA74E00449DEA /* smallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD046EB264FA74E00449DEA /* smallCollectionViewCell.swift */; };
 		2BD046EE264FA74E00449DEA /* smallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD046EC264FA74E00449DEA /* smallCollectionViewCell.xib */; };
 		562F558B264F9F5B000F8CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F558A264F9F5B000F8CAB /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1014BF264FB497004AC800 /* SecondPageTopScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondPageTopScrollView.xib; sourceTree = "<group>"; };
+		2B1014C2264FB68C004AC800 /* SecondPageTopScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageTopScrollView.swift; sourceTree = "<group>"; };
 		2BD046EB264FA74E00449DEA /* smallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smallCollectionViewCell.swift; sourceTree = "<group>"; };
 		2BD046EC264FA74E00449DEA /* smallCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = smallCollectionViewCell.xib; sourceTree = "<group>"; };
 		562F5587264F9F5B000F8CAB /* hapdong-28th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hapdong-28th.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +130,8 @@
 				562F55AE264FA16A000F8CAB /* CellExample.swift */,
 				2BD046EB264FA74E00449DEA /* smallCollectionViewCell.swift */,
 				2BD046EC264FA74E00449DEA /* smallCollectionViewCell.xib */,
+				2B1014BF264FB497004AC800 /* SecondPageTopScrollView.xib */,
+				2B1014C2264FB68C004AC800 /* SecondPageTopScrollView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 			files = (
 				2BD046EE264FA74E00449DEA /* smallCollectionViewCell.xib in Resources */,
 				562F5597264F9F5E000F8CAB /* LaunchScreen.storyboard in Resources */,
+				2B1014C0264FB497004AC800 /* SecondPageTopScrollView.xib in Resources */,
 				562F5594264F9F5E000F8CAB /* Assets.xcassets in Resources */,
 				562F5592264F9F5B000F8CAB /* Main.storyboard in Resources */,
 			);
@@ -243,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				562F55AD264FA148000F8CAB /* Example+Extension.swift in Sources */,
+				2B1014C3264FB68C004AC800 /* SecondPageTopScrollView.swift in Sources */,
 				562F558F264F9F5B000F8CAB /* ViewController.swift in Sources */,
 				562F558B264F9F5B000F8CAB /* AppDelegate.swift in Sources */,
 				562F55B1264FA174000F8CAB /* ViewExample.swift in Sources */,
