@@ -19,6 +19,11 @@
 		562F55AF264FA16A000F8CAB /* CellExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55AE264FA16A000F8CAB /* CellExample.swift */; };
 		562F55B1264FA174000F8CAB /* ViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55B0264FA174000F8CAB /* ViewExample.swift */; };
 		562F55B3264FA186000F8CAB /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55B2264FA186000F8CAB /* Const.swift */; };
+		562F55BA264FA6D7000F8CAB /* ExhibitionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55B8264FA6D7000F8CAB /* ExhibitionCollectionViewCell.swift */; };
+		562F55BB264FA6D7000F8CAB /* ExhibitionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562F55B9264FA6D7000F8CAB /* ExhibitionCollectionViewCell.xib */; };
+		562F55BD264FA930000F8CAB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562F55BC264FA930000F8CAB /* Colors.xcassets */; };
+		562F55BF264FAAF6000F8CAB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55BE264FAAF6000F8CAB /* UIView+Extensions.swift */; };
+		562F55C1264FAB69000F8CAB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55C0264FAB69000F8CAB /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		562F55AE264FA16A000F8CAB /* CellExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellExample.swift; sourceTree = "<group>"; };
 		562F55B0264FA174000F8CAB /* ViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExample.swift; sourceTree = "<group>"; };
 		562F55B2264FA186000F8CAB /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		562F55B8264FA6D7000F8CAB /* ExhibitionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionCollectionViewCell.swift; sourceTree = "<group>"; };
+		562F55B9264FA6D7000F8CAB /* ExhibitionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExhibitionCollectionViewCell.xib; sourceTree = "<group>"; };
+		562F55BC264FA930000F8CAB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		562F55BE264FAAF6000F8CAB /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		562F55C0264FAB69000F8CAB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 			children = (
 				562F5598264F9F5E000F8CAB /* Info.plist */,
 				562F5593264F9F5E000F8CAB /* Assets.xcassets */,
+				562F55BC264FA930000F8CAB /* Colors.xcassets */,
 				562F55A6264F9FE0000F8CAB /* Constant */,
 				562F55A7264F9FE6000F8CAB /* Storyboard */,
 			);
@@ -120,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				562F55AE264FA16A000F8CAB /* CellExample.swift */,
+				562F55B8264FA6D7000F8CAB /* ExhibitionCollectionViewCell.swift */,
+				562F55B9264FA6D7000F8CAB /* ExhibitionCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -128,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				562F55AC264FA148000F8CAB /* Example+Extension.swift */,
+				562F55BE264FAAF6000F8CAB /* UIView+Extensions.swift */,
+				562F55C0264FAB69000F8CAB /* UIColor+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -222,8 +237,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562F55BD264FA930000F8CAB /* Colors.xcassets in Resources */,
 				562F5597264F9F5E000F8CAB /* LaunchScreen.storyboard in Resources */,
 				562F5594264F9F5E000F8CAB /* Assets.xcassets in Resources */,
+				562F55BB264FA6D7000F8CAB /* ExhibitionCollectionViewCell.xib in Resources */,
 				562F5592264F9F5B000F8CAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,12 +255,15 @@
 				562F55AD264FA148000F8CAB /* Example+Extension.swift in Sources */,
 				562F558F264F9F5B000F8CAB /* ViewController.swift in Sources */,
 				562F558B264F9F5B000F8CAB /* AppDelegate.swift in Sources */,
+				562F55C1264FAB69000F8CAB /* UIColor+Extensions.swift in Sources */,
 				562F55B1264FA174000F8CAB /* ViewExample.swift in Sources */,
 				562F55AF264FA16A000F8CAB /* CellExample.swift in Sources */,
+				562F55BA264FA6D7000F8CAB /* ExhibitionCollectionViewCell.swift in Sources */,
 				562F55A9264FA04C000F8CAB /* ModelExample.swift in Sources */,
 				562F558D264F9F5B000F8CAB /* SceneDelegate.swift in Sources */,
 				562F55AB264FA055000F8CAB /* APIServiceExample.swift in Sources */,
 				562F55B3264FA186000F8CAB /* Const.swift in Sources */,
+				562F55BF264FAAF6000F8CAB /* UIView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +412,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EQ7Z68Z2F2;
-				INFOPLIST_FILE = "hapdong-28th/Info.plist";
+				INFOPLIST_FILE = "hapdong-28th/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,7 +431,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EQ7Z68Z2F2;
-				INFOPLIST_FILE = "hapdong-28th/Info.plist";
+				INFOPLIST_FILE = "hapdong-28th/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
