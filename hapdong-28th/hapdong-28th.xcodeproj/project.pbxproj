@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BD046ED264FA74E00449DEA /* smallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD046EB264FA74E00449DEA /* smallCollectionViewCell.swift */; };
+		2BD046EE264FA74E00449DEA /* smallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD046EC264FA74E00449DEA /* smallCollectionViewCell.xib */; };
 		562F558B264F9F5B000F8CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F558A264F9F5B000F8CAB /* AppDelegate.swift */; };
 		562F558D264F9F5B000F8CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F558C264F9F5B000F8CAB /* SceneDelegate.swift */; };
 		562F558F264F9F5B000F8CAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F558E264F9F5B000F8CAB /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BD046EB264FA74E00449DEA /* smallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smallCollectionViewCell.swift; sourceTree = "<group>"; };
+		2BD046EC264FA74E00449DEA /* smallCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = smallCollectionViewCell.xib; sourceTree = "<group>"; };
 		562F5587264F9F5B000F8CAB /* hapdong-28th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hapdong-28th.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		562F558A264F9F5B000F8CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		562F558C264F9F5B000F8CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				562F55AE264FA16A000F8CAB /* CellExample.swift */,
+				2BD046EB264FA74E00449DEA /* smallCollectionViewCell.swift */,
+				2BD046EC264FA74E00449DEA /* smallCollectionViewCell.xib */,
 				562F55B8264FA6D7000F8CAB /* ExhibitionCollectionViewCell.swift */,
 				562F55B9264FA6D7000F8CAB /* ExhibitionCollectionViewCell.xib */,
 			);
@@ -237,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD046EE264FA74E00449DEA /* smallCollectionViewCell.xib in Resources */,
 				562F55BD264FA930000F8CAB /* Colors.xcassets in Resources */,
 				562F5597264F9F5E000F8CAB /* LaunchScreen.storyboard in Resources */,
 				562F5594264F9F5E000F8CAB /* Assets.xcassets in Resources */,
@@ -262,6 +269,7 @@
 				562F55A9264FA04C000F8CAB /* ModelExample.swift in Sources */,
 				562F558D264F9F5B000F8CAB /* SceneDelegate.swift in Sources */,
 				562F55AB264FA055000F8CAB /* APIServiceExample.swift in Sources */,
+				2BD046ED264FA74E00449DEA /* smallCollectionViewCell.swift in Sources */,
 				562F55B3264FA186000F8CAB /* Const.swift in Sources */,
 				562F55BF264FAAF6000F8CAB /* UIView+Extensions.swift in Sources */,
 			);
