@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        overrideUserInterfaceStyle = .light
         
         assignDelegate()
         assignDataSource()
@@ -53,6 +54,8 @@ class MainViewController: UIViewController {
     }
     
     private func registerXib() {
+        let imageSwipeTableViewCell = UINib(nibName: Const.Xib.Name.imageSwipeTableViewCell, bundle: nil)
+        self.mainTableView.register(imageSwipeTableViewCell, forCellReuseIdentifier: Const.Xib.Name.imageSwipeTableViewCell)
         let editorPickTableViewCell = UINib(nibName: Const.Xib.Name.editorPickTableViewCell, bundle: nil)
         self.mainTableView.register(editorPickTableViewCell, forCellReuseIdentifier: Const.Xib.Name.editorPickTableViewCell)
         let exhibitionTableViewCell = UINib(nibName: Const.Xib.Name.exhibitionTableViewCell, bundle: nil)
@@ -74,6 +77,12 @@ class MainViewController: UIViewController {
     }
     
     // MARK: - @IBAction Functions
+    @objc private func moreProjectsButtonPressed(_ sender: UIButton) {
+        let rootVC = UIApplication.shared.windows.first!.rootViewController as? MainTabBarViewController
+        rootVC?.selectedIndex = 1
+//        self.navigationController?.pushViewController(rootVC?.viewControllers?[2] ?? MainTabBarViewController().second, animated: true)
+        
+    }
     
     
 }
@@ -85,15 +94,24 @@ extension MainViewController: UITableViewDataSource {
     
     // section 별 rows 수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     
     // cell 지정
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch indexPath.row {
-        // 에디터픽, 인기찜, 성공임박
+        
+        // image swipe view
         case 0:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.Identifier.imageSwipeTableViewCell) as? ImageSwipeTableViewCell {
+                return cell
+            }
+            return UITableViewCell()
+        
+        
+        // 에디터픽, 인기찜, 성공임박
+        case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.Identifier.editorPickTableViewCell) as? EditorPickTableViewCell {
                 // set cell 함수 호출
                 let rowArray = exampleArray.objectArray[0] as! [ProjectModel]
@@ -105,7 +123,7 @@ extension MainViewController: UITableViewDataSource {
             return UITableViewCell()
             
         // 공개예정 프로젝트
-        case 1:
+        case 2:
             if let cell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.Identifier.projectsTableViewCell) as? ProjectsTableViewCell {
                 // set cell 함수 호출
                 
@@ -114,13 +132,14 @@ extension MainViewController: UITableViewDataSource {
                 cell.setCell(row: rowArray)
                 cell.initTitleLabel(usage: "expected")
                 cell.projectsTableViewCellUsage = .expected
+                cell.projectMoreButton.addTarget(self, action: #selector(moreProjectsButtonPressed(_:)), for: .touchUpInside)
                 
                 return cell
             }
             return UITableViewCell()
             
         // 진행중인 기획전
-        case 2:
+        case 3:
             if let cell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.Identifier.exhibitionTableViewCell) as? ExhibitionTableViewCell {
                 // set cell 함수 호출
                 
@@ -133,7 +152,7 @@ extension MainViewController: UITableViewDataSource {
             return UITableViewCell()
             
         // 인기 추천 프로젝트
-        case 3:
+        case 4:
             if let cell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.Identifier.projectsTableViewCell) as? ProjectsTableViewCell {
                 // set cell 함수 호출
                 let rowArray = exampleArray.objectArray[3] as! [ProjectModel]
@@ -147,7 +166,7 @@ extension MainViewController: UITableViewDataSource {
             return UITableViewCell()
             
         // 신규 추천 프로젝트
-        case 4:
+        case 5:
             if let cell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.Identifier.projectsTableViewCell) as? ProjectsTableViewCell {
                 // set cell 함수 호출
                 let rowArray = exampleArray.objectArray[4] as! [ProjectModel]

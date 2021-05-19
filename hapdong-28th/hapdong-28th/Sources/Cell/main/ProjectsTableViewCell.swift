@@ -77,6 +77,8 @@ class ProjectsTableViewCell: UITableViewCell {
         }
     }
     
+    
+    
     // MARK: - @IBAction Functions
     
 }
