@@ -8,20 +8,100 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondPgTopScrollView" customModule="hapdong_28th" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDt-4x-Xaw">
+                    <rect key="frame" x="0.0" y="0.0" width="335" height="48"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bc-PJ-2Ir">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Property 1=unselected" translatesAutoresizingMaskIntoConstraints="NO" id="7Fg-0k-KFH">
+                                    <rect key="frame" x="11" y="7" width="78" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="78" id="3DE-it-Djv"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Property 1=unselected_3" translatesAutoresizingMaskIntoConstraints="NO" id="rCD-M1-AC6">
+                                    <rect key="frame" x="93" y="7" width="63" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="63" id="5h9-bX-6t6"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Property 1=selected_2" translatesAutoresizingMaskIntoConstraints="NO" id="eQ3-g4-x4w">
+                                    <rect key="frame" x="160" y="7" width="126" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="126" id="GBc-BA-Ujb"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Property 1=unselected_2" translatesAutoresizingMaskIntoConstraints="NO" id="jJy-8l-fx9">
+                                    <rect key="frame" x="290" y="7" width="83" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="83" id="s30-T2-MpF"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="jJy-8l-fx9" firstAttribute="top" secondItem="9Bc-PJ-2Ir" secondAttribute="top" constant="7" id="3t0-6W-j6C"/>
+                                <constraint firstAttribute="bottom" secondItem="rCD-M1-AC6" secondAttribute="bottom" constant="8" id="7Fl-Dt-jwZ"/>
+                                <constraint firstAttribute="bottom" secondItem="7Fg-0k-KFH" secondAttribute="bottom" constant="8" id="7fN-7N-Jfv"/>
+                                <constraint firstItem="jJy-8l-fx9" firstAttribute="leading" secondItem="eQ3-g4-x4w" secondAttribute="trailing" constant="4" id="9eD-I8-0S8"/>
+                                <constraint firstItem="rCD-M1-AC6" firstAttribute="leading" secondItem="7Fg-0k-KFH" secondAttribute="trailing" constant="4" id="ArN-zB-qVi"/>
+                                <constraint firstItem="7Fg-0k-KFH" firstAttribute="leading" secondItem="9Bc-PJ-2Ir" secondAttribute="leading" constant="11" id="TFi-Ak-rad"/>
+                                <constraint firstItem="eQ3-g4-x4w" firstAttribute="leading" secondItem="rCD-M1-AC6" secondAttribute="trailing" constant="4" id="dcu-5N-vlz"/>
+                                <constraint firstAttribute="bottom" secondItem="eQ3-g4-x4w" secondAttribute="bottom" constant="8" id="eKJ-hu-O6G"/>
+                                <constraint firstItem="rCD-M1-AC6" firstAttribute="top" secondItem="9Bc-PJ-2Ir" secondAttribute="top" constant="7" id="fQs-zX-SXJ"/>
+                                <constraint firstAttribute="bottom" secondItem="jJy-8l-fx9" secondAttribute="bottom" constant="8" id="lJz-2j-Byq"/>
+                                <constraint firstItem="eQ3-g4-x4w" firstAttribute="top" secondItem="9Bc-PJ-2Ir" secondAttribute="top" constant="7" id="nZx-PD-tWz"/>
+                                <constraint firstItem="7Fg-0k-KFH" firstAttribute="top" secondItem="9Bc-PJ-2Ir" secondAttribute="top" constant="7" id="o2N-cJ-c6K"/>
+                                <constraint firstAttribute="trailing" secondItem="jJy-8l-fx9" secondAttribute="trailing" constant="2" id="yM9-sl-tym"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="9Bc-PJ-2Ir" firstAttribute="leading" secondItem="sDt-4x-Xaw" secondAttribute="leading" id="KGD-2f-xJS"/>
+                        <constraint firstItem="9Bc-PJ-2Ir" firstAttribute="top" secondItem="sDt-4x-Xaw" secondAttribute="top" id="fWQ-Mr-HSD"/>
+                        <constraint firstAttribute="trailing" secondItem="9Bc-PJ-2Ir" secondAttribute="trailing" constant="87" id="uQg-eX-a3P"/>
+                        <constraint firstAttribute="bottom" secondItem="9Bc-PJ-2Ir" secondAttribute="bottom" id="zpy-lc-iLh"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqN-gV-13b">
+                    <rect key="frame" x="325" y="-4" width="50" height="56"/>
+                    <state key="normal" image="group70"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Tjk-j1-fcf"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="SecondPgTopScrollView"/>
+            <constraints>
+                <constraint firstItem="NqN-gV-13b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-4" id="LNm-MZ-h14"/>
+                <constraint firstItem="sDt-4x-Xaw" firstAttribute="bottom" secondItem="Tjk-j1-fcf" secondAttribute="bottom" id="UWv-f1-00D"/>
+                <constraint firstItem="NqN-gV-13b" firstAttribute="leading" secondItem="Tjk-j1-fcf" secondAttribute="leading" constant="325" id="XaQ-k7-JrH"/>
+                <constraint firstItem="sDt-4x-Xaw" firstAttribute="leading" secondItem="Tjk-j1-fcf" secondAttribute="leading" id="aNR-uo-MW9"/>
+                <constraint firstItem="Tjk-j1-fcf" firstAttribute="trailing" secondItem="sDt-4x-Xaw" secondAttribute="trailing" constant="40" id="biP-LU-4te"/>
+                <constraint firstItem="NqN-gV-13b" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="hI0-xx-OwQ"/>
+                <constraint firstItem="NqN-gV-13b" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="4" id="nFf-wg-RbU"/>
+                <constraint firstItem="sDt-4x-Xaw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="si2-jU-5ID"/>
+                <constraint firstItem="9Bc-PJ-2Ir" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" priority="250" id="vLC-fo-lxd"/>
+                <constraint firstItem="9Bc-PJ-2Ir" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="zp4-fE-71E"/>
+            </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-83" y="-46"/>
+            <point key="canvasLocation" x="-86.231884057971016" y="-21.428571428571427"/>
         </view>
     </objects>
     <resources>
+        <image name="Property 1=selected_2" width="504" height="132"/>
+        <image name="Property 1=unselected" width="312" height="132"/>
+        <image name="Property 1=unselected_2" width="332" height="132"/>
+        <image name="Property 1=unselected_3" width="252" height="132"/>
+        <image name="group70" width="50" height="56"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
