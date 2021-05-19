@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B00BBE026529995001D913C /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B00BBDF26529995001D913C /* Test.storyboard */; };
+		2B00BBE326529A72001D913C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B00BBE226529A72001D913C /* TestViewController.swift */; };
+		2B1014C0264FB497004AC800 /* SecondPageTopScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1014BF264FB497004AC800 /* SecondPageTopScrollView.xib */; };
 		2BD046ED264FA74E00449DEA /* smallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD046EB264FA74E00449DEA /* smallCollectionViewCell.swift */; };
 		2BD046EE264FA74E00449DEA /* smallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD046EC264FA74E00449DEA /* smallCollectionViewCell.xib */; };
+		2BDAC34F26523AB400349B45 /* SecondPgTopScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAC34E26523AB400349B45 /* SecondPgTopScrollView.swift */; };
 		5621507F26528BA400CC5A30 /* Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5621507E26528BA400CC5A30 /* Xib.swift */; };
 		562150852652940400CC5A30 /* EditorPickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562150832652940400CC5A30 /* EditorPickTableViewCell.swift */; };
 		562150862652940400CC5A30 /* EditorPickTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562150842652940400CC5A30 /* EditorPickTableViewCell.xib */; };
@@ -42,8 +46,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B00BBDF26529995001D913C /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		2B00BBE226529A72001D913C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		2B1014BF264FB497004AC800 /* SecondPageTopScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondPageTopScrollView.xib; sourceTree = "<group>"; };
 		2BD046EB264FA74E00449DEA /* smallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smallCollectionViewCell.swift; sourceTree = "<group>"; };
 		2BD046EC264FA74E00449DEA /* smallCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = smallCollectionViewCell.xib; sourceTree = "<group>"; };
+		2BDAC34E26523AB400349B45 /* SecondPgTopScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPgTopScrollView.swift; sourceTree = "<group>"; };
 		5621507E26528BA400CC5A30 /* Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xib.swift; sourceTree = "<group>"; };
 		562150832652940400CC5A30 /* EditorPickTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorPickTableViewCell.swift; sourceTree = "<group>"; };
 		562150842652940400CC5A30 /* EditorPickTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditorPickTableViewCell.xib; sourceTree = "<group>"; };
@@ -162,6 +170,8 @@
 		562F55A0264F9FB5000F8CAB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2B00BBE226529A72001D913C /* TestViewController.swift */,
+				562F558E264F9F5B000F8CAB /* ViewController.swift */,
 				562F558E264F9F5B000F8CAB /* MainViewController.swift */,
 			);
 			path = ViewController;
@@ -183,6 +193,8 @@
 				CCEA7890264FA87500C79576 /* FundingTableViewCell.swift */,
 				2BD046EB264FA74E00449DEA /* smallCollectionViewCell.swift */,
 				2BD046EC264FA74E00449DEA /* smallCollectionViewCell.xib */,
+				2B1014BF264FB497004AC800 /* SecondPageTopScrollView.xib */,
+				2BDAC34E26523AB400349B45 /* SecondPgTopScrollView.swift */,
 				562F55B8264FA6D7000F8CAB /* ExhibitionCollectionViewCell.swift */,
 				562F55B9264FA6D7000F8CAB /* ExhibitionCollectionViewCell.xib */,
 			);
@@ -233,6 +245,7 @@
 			children = (
 				562F5595264F9F5E000F8CAB /* LaunchScreen.storyboard */,
 				562F5590264F9F5B000F8CAB /* Main.storyboard */,
+				2B00BBDF26529995001D913C /* Test.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -316,6 +329,10 @@
 				2BD046EE264FA74E00449DEA /* smallCollectionViewCell.xib in Resources */,
 				562F55BD264FA930000F8CAB /* Colors.xcassets in Resources */,
 				562F5597264F9F5E000F8CAB /* LaunchScreen.storyboard in Resources */,
+				2B1014C0264FB497004AC800 /* SecondPageTopScrollView.xib in Resources */,
+				562F5594264F9F5E000F8CAB /* Assets.xcassets in Resources */,
+				562F55BB264FA6D7000F8CAB /* ExhibitionCollectionViewCell.xib in Resources */,
+				2B00BBE026529995001D913C /* Test.storyboard in Resources */,
 				5621508E265296B400CC5A30 /* ExhibitionTableViewCell.xib in Resources */,
 				562F5594264F9F5E000F8CAB /* Assets.xcassets in Resources */,
 				562F55BB264FA6D7000F8CAB /* ExhibitionCollectionViewCell.xib in Resources */,
@@ -392,10 +409,12 @@
 				562F55BA264FA6D7000F8CAB /* ExhibitionCollectionViewCell.swift in Sources */,
 				562F55A9264FA04C000F8CAB /* ModelExample.swift in Sources */,
 				562F558D264F9F5B000F8CAB /* SceneDelegate.swift in Sources */,
+				2BDAC34F26523AB400349B45 /* SecondPgTopScrollView.swift in Sources */,
 				CCEA7891264FA87500C79576 /* FundingTableViewCell.swift in Sources */,
 				562F55AB264FA055000F8CAB /* APIServiceExample.swift in Sources */,
 				2BD046ED264FA74E00449DEA /* smallCollectionViewCell.swift in Sources */,
 				562F55B3264FA186000F8CAB /* Const.swift in Sources */,
+				2B00BBE326529A72001D913C /* TestViewController.swift in Sources */,
 				562F55BF264FAAF6000F8CAB /* UIView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -528,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
