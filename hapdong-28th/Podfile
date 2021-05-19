@@ -6,7 +6,7 @@ target 'hapdong-28th' do
   use_frameworks!
 
   # Pods for hapdong-28th
-  pod 'Then'
-  pod 'SnapKit', '~> 5.0.0'
+	pod 'Then'
+	pod 'SnapKit', '~> 5.0.0'
 
 end

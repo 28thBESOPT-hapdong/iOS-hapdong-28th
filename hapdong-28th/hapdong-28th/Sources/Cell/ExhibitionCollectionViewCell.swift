@@ -28,12 +28,26 @@ class ExhibitionCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        initTagViews()
     }
     
     // MARK: - Functions
     
     func initTagViews() {
         tagBgView1.makeRoundedWithBorder(radius: tagBgView1.frame.height / 2, color: UIColor.RedOrange.cgColor)
+        tagBgView2.makeRoundedWithBorder(radius: tagBgView1.frame.height / 2, color: UIColor.RedOrange.cgColor)
+        tagBgView3.makeRoundedWithBorder(radius: tagBgView1.frame.height / 2, color: UIColor.RedOrange.cgColor)
+        tagBgView4.makeRoundedWithBorder(radius: tagBgView1.frame.height / 2, color: UIColor.RedOrange.cgColor)
+    }
+    
+    func setCell(exhibition: ExhibitionModel) {
+        self.ExhibitionImageVIew.image = UIImage(named: exhibition.image)
+        self.numberLabel.text = exhibition.projectCount
+        self.tagLabel1.text = "#\(exhibition.tags[0])"
+        self.tagLabel2.text = "#\(exhibition.tags[1])"
+        self.tagLabel3.text = "#\(exhibition.tags[2])"
+        self.tagLabel4.text = "#\(exhibition.tags[3])"
+        
     }
     
     // MARK: - @IBAction Functions
