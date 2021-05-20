@@ -72,7 +72,11 @@ class SecondViewController: UIViewController {
         self.tableView.register(fundingTableViewCell, forCellReuseIdentifier: Const.Xib.Name.fundingTableViewCell)
     }
     
-
+    @IBAction func goBackToFirstPage(_ sender: Any) {
+        let rootVC = UIApplication.shared.windows.first!.rootViewController as? MainTabBarViewController
+        rootVC?.selectedIndex = 0
+    }
+    
 }
 
 extension SecondViewController: UITableViewDelegate {
