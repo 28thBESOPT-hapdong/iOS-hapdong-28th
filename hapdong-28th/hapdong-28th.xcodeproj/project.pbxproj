@@ -219,8 +219,6 @@
 				562F55AE264FA16A000F8CAB /* CellExample.swift */,
 				2BD046EB264FA74E00449DEA /* smallCollectionViewCell.swift */,
 				2BD046EC264FA74E00449DEA /* smallCollectionViewCell.xib */,
-				2B1014BF264FB497004AC800 /* SecondPageTopScrollView.xib */,
-				2BDAC34E26523AB400349B45 /* SecondPgTopScrollView.swift */,
 				562F55B8264FA6D7000F8CAB /* ExhibitionCollectionViewCell.swift */,
 				562F55B9264FA6D7000F8CAB /* ExhibitionCollectionViewCell.xib */,
 			);
@@ -298,6 +296,8 @@
 		CC28F1C32654FEDA00844913 /* second */ = {
 			isa = PBXGroup;
 			children = (
+				2B1014BF264FB497004AC800 /* SecondPageTopScrollView.xib */,
+				2BDAC34E26523AB400349B45 /* SecondPgTopScrollView.swift */,
 				CC28F1C42654FEEB00844913 /* FundingTableViewCell.swift */,
 				CC28F1C52654FEEB00844913 /* FundingTableViewCell.xib */,
 			);
