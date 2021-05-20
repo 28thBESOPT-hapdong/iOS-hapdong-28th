@@ -30,6 +30,7 @@ class MainViewController: UIViewController {
         registerXib()
         initSegmentedControl()
         initNavigationBar()
+        addSegmentedControlHandler()
     }
     
     // MARK: - Functions
@@ -80,10 +81,40 @@ class MainViewController: UIViewController {
     @objc private func moreProjectsButtonPressed(_ sender: UIButton) {
         let rootVC = UIApplication.shared.windows.first!.rootViewController as? MainTabBarViewController
         rootVC?.selectedIndex = 1
-//        self.navigationController?.pushViewController(rootVC?.viewControllers?[2] ?? MainTabBarViewController().second, animated: true)
+        //        self.navigationController?.pushViewController(rootVC?.viewControllers?[2] ?? MainTabBarViewController().second, animated: true)
         
     }
     
+    private func addSegmentedControlHandler() {
+        mainSegmentedControl.addTarget(self, action: #selector(mainSegmentedControlValueChanged(_:)), for: .valueChanged)
+    }
+    
+    @objc func mainSegmentedControlValueChanged(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        // 추천
+        case 0:
+            self.scrollToRow(row: 1)
+        // 얼리버드
+        case 1:
+            self.scrollToRow(row: 2)
+        // 기획전
+        case 2:
+            self.scrollToRow(row: 3)
+        // HOT
+        case 3:
+            self.scrollToRow(row: 4)
+        // NEW
+        case 4:
+            self.scrollToRow(row: 5)
+        default:
+            break
+        }
+    }
+    
+    private func scrollToRow(row: Int) {
+        let rowIndexPath = NSIndexPath(row: row, section: 0)
+        mainTableView.scrollToRow(at: rowIndexPath as IndexPath, at: UITableView.ScrollPosition.top, animated: true)
+    }
     
 }
 
