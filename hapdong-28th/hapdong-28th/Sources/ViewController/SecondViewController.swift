@@ -9,6 +9,8 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    @IBOutlet weak var filterView: SecondPgTopScrollView!
+    
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var newProjectLabel: UILabel!
@@ -17,6 +19,8 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addCustomView()
 
         // Do any additional setup after loading the view.
 
@@ -34,6 +38,14 @@ class SecondViewController: UIViewController {
         
         
         
+    }
+    
+    // SecondPageTopScrollView
+    func addCustomView() {
+        if let customView = Bundle.main.loadNibNamed("SecondPageTopScrollView", owner: nil, options: nil)?.first as? UIView {
+            customView.frame = filterView.bounds
+            filterView.addSubview(customView)
+        }
     }
     
 
