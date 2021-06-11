@@ -127,7 +127,11 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="categoryAndWriter" destination="0tA-YP-VL0" id="OBC-p6-Zqm"/>
+                <outlet property="dDayLabel" destination="3Em-kk-KoY" id="DaT-g6-gPc"/>
                 <outlet property="desc" destination="Gps-fg-Xrw" id="kMb-sb-dcA"/>
+                <outlet property="percentLabel" destination="wUj-WE-ILk" id="OYZ-ks-Zqh"/>
+                <outlet property="priceLabel" destination="gPM-d0-H9d" id="yRR-rQ-YhO"/>
+                <outlet property="progressView" destination="mKq-Sg-Bx0" id="tww-5u-u0k"/>
                 <outlet property="thumbnailImage" destination="Rye-dB-4SJ" id="Vp3-nv-ysL"/>
                 <outlet property="title" destination="jE8-Zf-nNI" id="mxk-cG-h5e"/>
             </connections>

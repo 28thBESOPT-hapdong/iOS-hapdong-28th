@@ -6,10 +6,9 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FundingTableViewCell: UITableViewCell {
-
-
     
     @IBOutlet weak var thumbnailImage: UIImageView!
     
@@ -18,6 +17,12 @@ class FundingTableViewCell: UITableViewCell {
     @IBOutlet weak var categoryAndWriter: UILabel!
     
     @IBOutlet weak var desc: UILabel!
+
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var percentLabel: UILabel!
+    @IBOutlet weak var dDayLabel: UILabel!
+
+    @IBOutlet weak var progressView: UIProgressView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,9 +38,18 @@ class FundingTableViewCell: UITableViewCell {
     }
     
 
-    func setCell(funding: FundingModel) {
+    func setCell(funding: Detail) {
         
-        thumbnailImage.image = UIImage(named: funding.imageStr)
+//        let id: String
+//        let detailID: Int
+//        let image: String [0]
+//        let category[0], writer [0], title[0], detailDescription[0]: String
+//        let price[0]: String
+//        let percent, dDay: Int
+        
+        
+        let url = URL(string: funding.image)
+        thumbnailImage.kf.setImage(with: url)
         
         
         let titleParagraphStyle = NSMutableParagraphStyle()
@@ -52,8 +66,14 @@ class FundingTableViewCell: UITableViewCell {
         let descParagraphStyle = NSMutableParagraphStyle()
         descParagraphStyle.lineHeightMultiple = 1.1
         
-        desc.attributedText = NSMutableAttributedString(string: funding.description, attributes: [NSAttributedString.Key.kern: -0.39, NSAttributedString.Key.paragraphStyle: descParagraphStyle])
+        desc.attributedText = NSMutableAttributedString(string: funding.detailDescription, attributes: [NSAttributedString.Key.kern: -0.39, NSAttributedString.Key.paragraphStyle: descParagraphStyle])
         desc.sizeToFit()
+        
+        priceLabel.text = funding.price
+        percentLabel.text = "\(funding.percent)%"
+        dDayLabel.text = "\(funding.dDay)일 남음"
+
+        progressView.progress = Float((funding.percent > 100) ? 1: funding.percent / 100)
     
         
     }
