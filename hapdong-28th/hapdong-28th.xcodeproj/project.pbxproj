@@ -29,7 +29,6 @@
 		562F5594264F9F5E000F8CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562F5593264F9F5E000F8CAB /* Assets.xcassets */; };
 		562F5597264F9F5E000F8CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562F5595264F9F5E000F8CAB /* LaunchScreen.storyboard */; };
 		562F55A9264FA04C000F8CAB /* ModelExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55A8264FA04C000F8CAB /* ModelExample.swift */; };
-		562F55AB264FA055000F8CAB /* APIServiceExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55AA264FA055000F8CAB /* APIServiceExample.swift */; };
 		562F55AD264FA148000F8CAB /* Example+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55AC264FA148000F8CAB /* Example+Extension.swift */; };
 		562F55AF264FA16A000F8CAB /* CellExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55AE264FA16A000F8CAB /* CellExample.swift */; };
 		562F55B1264FA174000F8CAB /* ViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55B0264FA174000F8CAB /* ViewExample.swift */; };
@@ -39,6 +38,15 @@
 		562F55BD264FA930000F8CAB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562F55BC264FA930000F8CAB /* Colors.xcassets */; };
 		562F55BF264FAAF6000F8CAB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55BE264FAAF6000F8CAB /* UIView+Extensions.swift */; };
 		562F55C1264FAB69000F8CAB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F55C0264FAB69000F8CAB /* UIColor+Extensions.swift */; };
+		568E0D72267397EE005CE706 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E0D71267397EE005CE706 /* APIConstants.swift */; };
+		568E0D742673999B005CE706 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E0D732673999B005CE706 /* GenericResponse.swift */; };
+		568E0D76267399B7005CE706 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E0D75267399B7005CE706 /* NetworkResult.swift */; };
+		568E0D7B267399EC005CE706 /* Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E0D7A267399EC005CE706 /* Exhibition.swift */; };
+		568E0D7D26739A1E005CE706 /* EditorPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E0D7C26739A1E005CE706 /* EditorPick.swift */; };
+		568E0D7F26739A42005CE706 /* OpenProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E0D7E26739A42005CE706 /* OpenProject.swift */; };
+		568E0D8126739A65005CE706 /* PopularProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E0D8026739A65005CE706 /* PopularProject.swift */; };
+		568E0D8526739AB1005CE706 /* Banners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E0D8426739AB1005CE706 /* Banners.swift */; };
+		568E0D8726739ADE005CE706 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E0D8626739ADE005CE706 /* Details.swift */; };
 		865BEA76BCD42BD0332D00D6 /* Pods_hapdong_28th.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0087A1EDB42770C09D4D87E /* Pods_hapdong_28th.framework */; };
 		CC28F1B12654DED100844913 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC28F1B02654DED100844913 /* MainTabBarViewController.swift */; };
 		CC28F1B32654DFB700844913 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC28F1B22654DFB700844913 /* SecondViewController.swift */; };
@@ -80,7 +88,6 @@
 		562F5596264F9F5E000F8CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562F5598264F9F5E000F8CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562F55A8264FA04C000F8CAB /* ModelExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExample.swift; sourceTree = "<group>"; };
-		562F55AA264FA055000F8CAB /* APIServiceExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceExample.swift; sourceTree = "<group>"; };
 		562F55AC264FA148000F8CAB /* Example+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+Extension.swift"; sourceTree = "<group>"; };
 		562F55AE264FA16A000F8CAB /* CellExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellExample.swift; sourceTree = "<group>"; };
 		562F55B0264FA174000F8CAB /* ViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExample.swift; sourceTree = "<group>"; };
@@ -90,6 +97,15 @@
 		562F55BC264FA930000F8CAB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		562F55BE264FAAF6000F8CAB /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		562F55C0264FAB69000F8CAB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		568E0D71267397EE005CE706 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		568E0D732673999B005CE706 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		568E0D75267399B7005CE706 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		568E0D7A267399EC005CE706 /* Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exhibition.swift; sourceTree = "<group>"; };
+		568E0D7C26739A1E005CE706 /* EditorPick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorPick.swift; sourceTree = "<group>"; };
+		568E0D7E26739A42005CE706 /* OpenProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenProject.swift; sourceTree = "<group>"; };
+		568E0D8026739A65005CE706 /* PopularProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularProject.swift; sourceTree = "<group>"; };
+		568E0D8426739AB1005CE706 /* Banners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banners.swift; sourceTree = "<group>"; };
+		568E0D8626739ADE005CE706 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		7A5384D4D69F5E48FA629CD7 /* Pods-hapdong-28th.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hapdong-28th.release.xcconfig"; path = "Target Support Files/Pods-hapdong-28th/Pods-hapdong-28th.release.xcconfig"; sourceTree = "<group>"; };
 		CC28F1B02654DED100844913 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CC28F1B22654DFB700844913 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -240,7 +256,9 @@
 		562F55A4264F9FC5000F8CAB /* APIService */ = {
 			isa = PBXGroup;
 			children = (
-				562F55AA264FA055000F8CAB /* APIServiceExample.swift */,
+				568E0D71267397EE005CE706 /* APIConstants.swift */,
+				568E0D732673999B005CE706 /* GenericResponse.swift */,
+				568E0D75267399B7005CE706 /* NetworkResult.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -248,6 +266,7 @@
 		562F55A5264F9FD3000F8CAB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				568E0D79267399D2005CE706 /* APIModel */,
 				562F55A8264FA04C000F8CAB /* ModelExample.swift */,
 				5621508F26529B0300CC5A30 /* ProjectModel.swift */,
 				5621509126529D1600CC5A30 /* ExhibitionModel.swift */,
@@ -274,6 +293,19 @@
 				CC28F1CD26553E3A00844913 /* Second.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		568E0D79267399D2005CE706 /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				568E0D7A267399EC005CE706 /* Exhibition.swift */,
+				568E0D7C26739A1E005CE706 /* EditorPick.swift */,
+				568E0D7E26739A42005CE706 /* OpenProject.swift */,
+				568E0D8026739A65005CE706 /* PopularProject.swift */,
+				568E0D8426739AB1005CE706 /* Banners.swift */,
+				568E0D8626739ADE005CE706 /* Details.swift */,
+			);
+			path = APIModel;
 			sourceTree = "<group>";
 		};
 		74ADE40DD926C5ADE9A0155A /* Pods */ = {
@@ -433,20 +465,27 @@
 			files = (
 				CC28F1B92654DFCE00844913 /* FifthViewController.swift in Sources */,
 				562F55AD264FA148000F8CAB /* Example+Extension.swift in Sources */,
+				568E0D8526739AB1005CE706 /* Banners.swift in Sources */,
 				562150852652940400CC5A30 /* EditorPickTableViewCell.swift in Sources */,
+				568E0D742673999B005CE706 /* GenericResponse.swift in Sources */,
 				CC28F1C62654FEEB00844913 /* FundingTableViewCell.swift in Sources */,
+				568E0D8726739ADE005CE706 /* Details.swift in Sources */,
 				562F558F264F9F5B000F8CAB /* MainViewController.swift in Sources */,
 				5621509226529D1600CC5A30 /* ExhibitionModel.swift in Sources */,
 				562F558F264F9F5B000F8CAB /* MainViewController.swift in Sources */,
 				CCEA7893264FAA5F00C79576 /* Font+Extension.swift in Sources */,
 				CCEA7895264FB06B00C79576 /* UIColor+Extension.swift in Sources */,
 				CC28F1CB26552E8700844913 /* FundingModel.swift in Sources */,
+				568E0D8126739A65005CE706 /* PopularProject.swift in Sources */,
 				CC28F1B12654DED100844913 /* MainTabBarViewController.swift in Sources */,
 				562F558B264F9F5B000F8CAB /* AppDelegate.swift in Sources */,
 				CC28F1BF2654F3CF00844913 /* ImageSwipeTableViewCell.swift in Sources */,
 				5621509026529B0300CC5A30 /* ProjectModel.swift in Sources */,
+				568E0D76267399B7005CE706 /* NetworkResult.swift in Sources */,
 				CC28F1B72654DFC600844913 /* FourthViewController.swift in Sources */,
+				568E0D7D26739A1E005CE706 /* EditorPick.swift in Sources */,
 				CC28F1B52654DFBF00844913 /* ThirdViewController.swift in Sources */,
+				568E0D7B267399EC005CE706 /* Exhibition.swift in Sources */,
 				562150892652950F00CC5A30 /* ProjectsTableViewCell.swift in Sources */,
 				562F55C1264FAB69000F8CAB /* UIColor+Extensions.swift in Sources */,
 				562F55B1264FA174000F8CAB /* ViewExample.swift in Sources */,
@@ -454,11 +493,12 @@
 				5621507F26528BA400CC5A30 /* Xib.swift in Sources */,
 				5621508D265296B400CC5A30 /* ExhibitionTableViewCell.swift in Sources */,
 				562F55BA264FA6D7000F8CAB /* ExhibitionCollectionViewCell.swift in Sources */,
+				568E0D72267397EE005CE706 /* APIConstants.swift in Sources */,
 				562F55A9264FA04C000F8CAB /* ModelExample.swift in Sources */,
 				562F558D264F9F5B000F8CAB /* SceneDelegate.swift in Sources */,
 				2BDAC34F26523AB400349B45 /* SecondPgTopScrollView.swift in Sources */,
+				568E0D7F26739A42005CE706 /* OpenProject.swift in Sources */,
 				CC28F1B32654DFB700844913 /* SecondViewController.swift in Sources */,
-				562F55AB264FA055000F8CAB /* APIServiceExample.swift in Sources */,
 				2BD046ED264FA74E00449DEA /* smallCollectionViewCell.swift in Sources */,
 				562F55B3264FA186000F8CAB /* Const.swift in Sources */,
 				2B00BBE326529A72001D913C /* TestViewController.swift in Sources */,
