@@ -15,14 +15,19 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var newProjectLabel: UILabel!
     
-    let fundingArray = Tumblebug().objectArray[5]
+    var fundingArray : [Detail] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         addCustomView()
 
         // Do any additional setup after loading the view.
+        
+        getDetailArray()
+        
+        
 
         assignDelegate()
         assignDataSource()
@@ -31,6 +36,7 @@ class SecondViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         
         registerXib()
+    
         
         let myMutableString = NSMutableAttributedString(string: newProjectLabel.text ?? "")
         myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.RedOrange, range: NSRange(location:0,length:3))
@@ -39,6 +45,30 @@ class SecondViewController: UIViewController {
         
         
     }
+    
+    func getDetailArray() {
+        
+        GetDetailDataService.shared.getDetailArray { (response) in
+                    switch(response)
+                    {
+                    case .success(let details) :
+                        if let data = details as? Details {
+                            self.fundingArray = data.detail
+                            self.tableView.reloadData()
+                        }
+                    case .requestErr(let message) :
+                        print("requestERR",message)
+                    case .pathErr :
+                        print("pathERR")
+                    case .serverErr:
+                        print("serverERR")
+                    case .networkFail:
+                        print("networkFail")
+                    }
+                }
+        
+    }
+    
     
     // SecondPageTopScrollView
     func addCustomView() {
@@ -113,9 +143,10 @@ extension SecondViewController: UITableViewDelegate {
 extension SecondViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         guard let cell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.Identifier.fundingTableViewCell, for: indexPath) as? FundingTableViewCell else {return UITableViewCell() }
 
-        cell.setCell(funding: fundingArray[indexPath.section] as! FundingModel)
+        cell.setCell(funding: fundingArray[indexPath.section])
            return cell
     }
     

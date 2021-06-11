@@ -8,5 +8,7 @@ target 'hapdong-28th' do
   # Pods for hapdong-28th
 	pod 'Then'
 	pod 'SnapKit', '~> 5.0.0'
+  pod 'Kingfisher', '~> 6.0'
+  pod 'Alamofire', '~> 5.4'
 
 end

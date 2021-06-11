@@ -59,6 +59,7 @@
 		CC28F1C72654FEEB00844913 /* FundingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC28F1C52654FEEB00844913 /* FundingTableViewCell.xib */; };
 		CC28F1CB26552E8700844913 /* FundingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC28F1CA26552E8700844913 /* FundingModel.swift */; };
 		CC28F1CE26553E3A00844913 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC28F1CD26553E3A00844913 /* Second.storyboard */; };
+		CC4DF2CC2673A42E0021471E /* GetDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4DF2CB2673A42E0021471E /* GetDetailDataService.swift */; };
 		CCEA7893264FAA5F00C79576 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA7892264FAA5F00C79576 /* Font+Extension.swift */; };
 		CCEA7895264FB06B00C79576 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA7894264FB06B00C79576 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -118,6 +119,7 @@
 		CC28F1C52654FEEB00844913 /* FundingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FundingTableViewCell.xib; sourceTree = "<group>"; };
 		CC28F1CA26552E8700844913 /* FundingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundingModel.swift; sourceTree = "<group>"; };
 		CC28F1CD26553E3A00844913 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		CC4DF2CB2673A42E0021471E /* GetDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetailDataService.swift; sourceTree = "<group>"; };
 		CCC976BE2118D7B5627FE4A0 /* Pods-hapdong-28th.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hapdong-28th.debug.xcconfig"; path = "Target Support Files/Pods-hapdong-28th/Pods-hapdong-28th.debug.xcconfig"; sourceTree = "<group>"; };
 		CCEA7892264FAA5F00C79576 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		CCEA7894264FB06B00C79576 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				568E0D71267397EE005CE706 /* APIConstants.swift */,
 				568E0D732673999B005CE706 /* GenericResponse.swift */,
 				568E0D75267399B7005CE706 /* NetworkResult.swift */,
+				CC4DF2CB2673A42E0021471E /* GetDetailDataService.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				562150852652940400CC5A30 /* EditorPickTableViewCell.swift in Sources */,
 				568E0D742673999B005CE706 /* GenericResponse.swift in Sources */,
 				CC28F1C62654FEEB00844913 /* FundingTableViewCell.swift in Sources */,
+				CC4DF2CC2673A42E0021471E /* GetDetailDataService.swift in Sources */,
 				568E0D8726739ADE005CE706 /* Details.swift in Sources */,
 				562F558F264F9F5B000F8CAB /* MainViewController.swift in Sources */,
 				5621509226529D1600CC5A30 /* ExhibitionModel.swift in Sources */,
